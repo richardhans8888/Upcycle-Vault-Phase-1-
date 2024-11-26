@@ -1,0 +1,442 @@
+/* Font Imports */
+@font-face {
+  font-family: saveurSans;
+  src: url("Elements/Saveur_sans.otf");
+}
+
+@font-face {
+  font-family: jost;
+  src: url("Elements/Jost.ttf");
+}
+
+@font-face {
+  font-family: jost_light;
+  src: url("Elements/Jost_light.ttf");
+}
+
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background: white;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  z-index: 1000;
+  transition: transform 0.4s ease, background 0.4s ease;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  font-family: jost, sans-serif;
+  color: black;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: gray;
+}
+
+.navbar .brand {
+  font-family: saveurSans, serif;
+  font-size: 1.8rem;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.navbar .brand:hover {
+  color: gray;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-icons i {
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-icons i:hover {
+  color: gray;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar ul {
+    gap: 10px;
+  }
+
+  .navbar .brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-icons i {
+    font-size: 1.3rem;
+  }
+}
+
+/* Video Section Styling */
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Catalog Section */
+.catalog {
+  padding: 50px 20px;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.catalog-item {
+  text-align: center;
+}
+
+.catalog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.catalog-title {
+  font-family: jost, sans-serif;
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #000;
+}
+
+.catalog-price {
+  font-family: jost_light, sans-serif;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Shop by Category */
+.shop-by-category {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.category-title {
+  font-family: saveurSans, serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.category-description {
+  font-family: jost, sans-serif;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.category-item {
+  text-align: center;
+}
+
+.category-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.category-name {
+  font-family: jost, sans-serif;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Video Overlay Text */
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.video-overlay h1 {
+  font-family: saveurSans, serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.video-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.video-link {
+  font-family: jost_light, sans-serif;
+  font-size: 1rem;
+  color: white;
+  border-bottom: 1px solid white;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.video-link:hover {
+  color: gray;
+  border-color: gray;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  font-family: jost, sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+  border-top: 1px solid lightgray;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  color: gray;
+}
+
+
+/* Seasonal Softness Section */
+.seasonal-softness {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.softness-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.softness-left {
+  position: relative;
+}
+
+.softness-right {
+  position: relative;
+}
+
+.softness-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image scales proportionally and fills the container */
+  border-radius: 10px;
+}
+
+/* Text Content Styling */
+.softness-text {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.softness-title {
+  font-family: saveurSans, serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.softness-description {
+  font-family: jost_light, sans-serif;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.softness-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.softness-link {
+  font-family: jost, sans-serif;
+  font-size: 1rem;
+  color: black;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.softness-link:hover {
+  color: gray;
+}
+
+
+/* Pradasphere News Section */
+.pradasphere-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Black background for the section */
+  padding: 50px 20px;
+  min-height: 400px; /* Adjust height as needed */
+  color: #fff; /* White text for contrast */
+}
+
+.pradasphere-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center align text */
+  max-width: 1200px; /* Optional width constraint */
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  gap: 20px; /* Adds space between the image and text */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  width: 100%; /* Ensures the image container takes full width */
+}
+
+.pradasphere-image {
+  max-width: 80%; /* Adjusts the size of the image */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 10px; /* Optional rounded corners */
+}
+
+.campaign-details {
+  padding: 20px;
+}
+
+.campaign-title {
+  font-family: saveurSans, serif; /* LV font for the title */
+  font-size: 1.8rem; /* Adjust the title font size */
+  letter-spacing: 1px; /* Adds spacing between letters */
+  text-transform: uppercase; /* Converts text to uppercase */
+  color: #fff; /* White text for better readability */
+}
+
+/* Footer Section */
+.custom-footer {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-separator {
+  width: 90%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 0 auto 20px auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: saveurSans, serif;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.footer-quote {
+  font-family: saveurSans, serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.ending-bar {
+  width: 100%;
+  background-color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: 100px;
+}
+
+.ending-text {
+  font-family: saveurSans, serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
