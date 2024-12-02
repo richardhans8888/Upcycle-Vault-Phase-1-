@@ -1,0 +1,679 @@
+@font-face {
+    font-family: saveurSans;
+    src: url(ArticleElements/Saveur_sans.otf);
+  }
+  
+  @font-face {
+    font-family: jost;
+    src: url(ArticleElements/Jost.ttf);
+  }
+  
+  @font-face {
+    font-family: jost_light;
+    src: url(ArticleElements/Jost_light.ttf);
+  }
+  
+  
+  
+  /* Navbar Styling */
+  .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 90px;
+      background: white; 
+      padding: 0 50px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      border-bottom: 1px solid #e0e0e0; 
+    }
+    
+    .navbar ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+    
+    .navbar ul li {
+      list-style: none;
+    }
+    
+    .navbar ul li a {
+      font-family: 'Poppins', sans-serif;
+      color: black;
+      padding: 0 12px;
+      font-size: 0.9em;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .navbar .brand {
+      font-family: saveurSans, serif;
+      font-size: 1.8em;
+      color: black;
+      text-decoration: none;
+    }
+    
+    .navbar i {
+      color: black;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    
+    /* Hover Effects */
+    .navbar ul li a:hover,
+    .navbar .brand:hover {
+      color: gray;
+    }
+    
+    .navbar i:hover {
+      color: gray;
+    }
+    
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container setup */
+body {
+  font-family: jost, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-family: saveurSans, sans-serif;
+  font-size: 3rem;
+  color: #2a2a2a;
+  margin-bottom: 20px;
+}
+
+/* Main content section */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content img {
+  width: 300%; 
+  max-width: 1500px; 
+  height: auto; 
+}
+
+.main-image {
+  width: 80%;
+  max-width: 800px;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+.text-content {
+  font-family: jost_light, sans-serif;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: jost, sans-serif;
+  font-size: 2.5rem;
+  color: #4a4a4a;
+  margin-bottom: 15px;
+}
+
+.event-name {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+/*  */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: jost, sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.6;
+}
+
+/* Container styles */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Headline and subtitle */
+.headline {
+  font-family: saveurSans, sans-serif;
+  font-size: 36px; 
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.subtitle {
+  font-family: jost_light, sans-serif;
+  font-size: 18px; 
+  margin: 20px 0;
+}
+
+/* Shows container */
+.shows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Show sections */
+.show {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Women and Men's specific styles */
+.women img, .men img {
+  width: 100%; 
+  height: 300px; 
+  object-fit: cover; 
+  margin-bottom: 20px;
+}
+
+/* Divider between the two shows */
+.divider {
+  width: 2px;
+  background-color: black;
+  height: 100%;
+  margin: 0 30px;
+}
+
+/* Title and date styles */
+.show h2 {
+  font-family: saveurSans, sans-serif;
+  font-size: 24px; 
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-family: jost_light, sans-serif;
+  font-size: 16px; 
+  color: gray;
+}
+
+/* Image  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: jost, sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.6;
+}
+
+/* Image Section */
+.image-section {
+  position: relative;
+  width: 100%;
+  height: 1000px; 
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text Overlay */
+.text-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-family: saveurSans, sans-serif;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: jost, sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.6;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: jost, sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.6;
+}
+
+/* Image Section */
+.image-section {
+  position: relative;
+  width: 100%;
+  height: auto; 
+  text-align: center;
+}
+
+.image {
+  width: 100%; 
+  height: auto; 
+  display: block; 
+  object-fit: contain;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .image-section {
+    padding: 0;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* Text Overlay */
+.text-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-family: saveurSans, sans-serif;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: jost, sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.6;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: jost, sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.6;
+}
+
+
+
+
+/* Down */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: jost, sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.6;
+}
+
+/* Header section */
+.header-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.header-title {
+  font-family: saveurSans, sans-serif;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header-description {
+  font-family: jost_light, sans-serif;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Container for the content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* Content layout */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Individual show section */
+.show {
+  flex: 1;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-family: saveurSans, sans-serif;
+  font-size: 24px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.category {
+  font-family: jost_light, sans-serif;
+  font-size: 16px;
+  color: gray;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-family: jost, sans-serif;
+  font-size: 14px;
+  color: #777;
+}
+
+
+
+/*  Last section */
+
+.custom-image-section {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.custom-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-text-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+  max-width: 40%;
+}
+
+.custom-title {
+  font-family: 'saveurSans', serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.custom-description {
+  font-family: 'jost_light', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ------------------------------------------ */
+
+/* Unique CSS for the Second Section */
+.custom-image-section-bottom {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.custom-image-bottom {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-text-overlay-bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+  max-width: 40%;
+}
+
+.custom-title-bottom {
+  font-family: 'saveurSans', serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.custom-description-bottom {
+  font-family: 'jost_light', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+
+
+/* Responsive  */
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar ul li a {
+    font-size: 0.8em;
+  }
+
+  .navbar .brand {
+    font-size: 1.5em;
+  }
+
+  .custom-text-overlay,
+  .custom-text-overlay-bottom {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar ul {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .custom-image-section,
+  .custom-image-section-bottom {
+    height: 600px;
+  }
+
+  .custom-text-overlay,
+  .custom-text-overlay-bottom {
+    max-width: 70%;
+    font-size: 14px;
+  }
+
+  .custom-title,
+  .custom-title-bottom {
+    font-size: 20px;
+  }
+
+  .custom-description,
+  .custom-description-bottom {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 60px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-image-section,
+  .custom-image-section-bottom {
+    height: 400px;
+  }
+
+  .custom-text-overlay,
+  .custom-text-overlay-bottom {
+    bottom: 10px;
+    left: 10px;
+    max-width: 90%;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .custom-title,
+  .custom-title-bottom {
+    font-size: 18px;
+  }
+
+  .custom-description,
+  .custom-description-bottom {
+    font-size: 12px;
+  }
+
+  .image {
+    height: 200px;
+  }
+}
+
+/* Footer Section */
+.custom-footer {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-separator {
+  width: 90%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 0 auto 20px auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: saveurSans, serif;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.footer-quote {
+  font-family: saveurSans, serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.ending-bar {
+  width: 100%;
+  background-color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: 100px;
+}
+
+.ending-text {
+  font-family: saveurSans, serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
